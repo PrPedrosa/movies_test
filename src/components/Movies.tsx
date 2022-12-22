@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Movie } from '../data'
 import { Link } from "react-router-dom"
 
@@ -13,6 +12,7 @@ function Movies({movies, next} : Props) {
     <div>
         {movies.map(movie => <Link to={`/${next}/${movie.connections.join("-") === "0"? movie.id: movie.connections.join("-")}`}>
             {movie.title}
+            {/* {movie.image && <img src={movie.image} alt="movie poster"/>} */}
             </Link>)}
     </div>
   )
