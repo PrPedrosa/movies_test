@@ -1,4 +1,4 @@
-import { useParams, Navigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { movies_Q3 } from '../data'
 
 type MyParams = {
@@ -11,9 +11,14 @@ function FinalPage() {
 
   return (
     <div className='page'>
-        {movie.length 
-        ? <a href={movie[0].link} target='_blank' rel='noreferrer'>Watch {movie[0].title}</a>
-        : <Navigate to={"/"}/>}
+        <div className='final-page-box'>
+          <h4>WATCH NEW MOVIES FOR FREE!</h4>
+          <p>Watch any movies online for free without ads!</p>
+          <p>Have fun watching your favourite movies!</p>
+          <a href={movie[0].link} target="_blank" rel='noreferrer'>
+            <p>WATCH HERE!</p>
+            </a>
+        </div>
     </div>
   )
 }

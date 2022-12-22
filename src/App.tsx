@@ -7,7 +7,9 @@ import FinalPage from "./pages/FinalPage";
 function App() {
   return (
     <div className="App">
-      <h1>LOGO HERE</h1>
+      <div className="logo">
+      <h1>Tech Test - EXADS</h1>
+      </div>
       <Routes>
         <Route path="/" element={<Question1/>}/>
         <Route path="/q2/:id" element={<Question2/>}/>

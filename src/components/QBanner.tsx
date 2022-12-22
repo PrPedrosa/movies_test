@@ -1,5 +1,3 @@
-import React from 'react'
-
 function QBanner({questionNum} : {questionNum : number}) {
   return (
     <div className='banner'>
